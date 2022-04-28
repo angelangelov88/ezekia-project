@@ -1,0 +1,18 @@
+//I added this mixin to make sure that the local data and the API one have the same structure. I had to add different classes for those to differentiate but with this mixin their size and structure will be the same regardless of the data source
+@mixin cards {
+    position: relative;
+    max-width: 250px;
+    margin: 20px;
+    text-align: left;
+    border-radius: 15px;
+    padding: 10px;
+    border: 10px white solid;
+    color: white;
+}
+
+//I added this mixin to ensure that all future badges can be positioned easily
+@mixin badge-positioning {
+    position: absolute;
+    right: -30px;
+    top: -16px;
+}

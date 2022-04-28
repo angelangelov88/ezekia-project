@@ -1,15 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <MuseumHighlight />
+  </div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MuseumHighlight from './components/MuseumHighlight.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MuseumHighlight,
   }
 }
 </script>
@@ -21,6 +23,16 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: -8px;
+}
+
+//I added the links class here as it is supposed to work on all pages and all links throughout the website
+.links {
+  text-decoration: none;
+  color: black;
+}
+
+.links:hover {
+  text-decoration: underline;
 }
 </style>
